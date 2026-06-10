@@ -54,40 +54,82 @@ You should see the help menu with all available options.
 
 ---
 
-## 🚀 Quick Start
 
-### Step 1: Get the Podcast's RSS Feed URL
+## 🔍 How to Find a Podcast RSS Feed Using Listen Notes
 
-You need the RSS feed URL of the podcast you want to download.
+Many podcast platforms (especially Spotify) do not publicly display RSS feed URLs. Fortunately, Listen Notes makes it easy to find them.
 
-#### Option A: Using Listen Notes (Recommended)
+### Step 1: Open Listen Notes
 
-1. Go to Listen Notes
-2. Search for your podcast
-3. Click the RSS icon (📶) near the top of the page
-4. Copy the URL from your browser's address bar
-
-#### Option B: Direct from Podcast Host
-
-Common podcast hosts provide RSS feeds at:
+Visit:
 
 ```text
-https://podcastname.libsyn.com/rss
-https://feeds.buzzsprout.com/XXXXXXXX.rss
-https://anchor.fm/s/XXXXXXXX/podcast/rss
+https://www.listennotes.com
 ```
 
-#### Option C: For Spotify-Hosted Podcasts
+### Step 2: Search for the Podcast
 
-Use Listen Notes (Option A) to find the feed, as Spotify doesn't provide public RSS links.
+1. Enter the podcast name into the search bar.
+2. Press **Enter** or click the search icon.
 
-### Step 2: Run the Script
+Examples:
 
-Basic command to download all episodes:
+- The Joe Rogan Experience
+- Serial
+- Stuff You Should Know
+
+### Step 3: Select the Correct Podcast
+
+1. Browse the search results.
+2. Verify the podcast artwork and title.
+3. Click the podcast name to open its dedicated page.
+
+### Step 4: Locate the RSS Feed
+
+On the podcast page, look for the **RSS icon (📶)**.
+
+It is usually located:
+
+- Near the top of the page next to Apple Podcasts and Spotify links
+- Next to a **Subscribe** button
+- In the sidebar on desktop layouts
+
+### Step 5: Copy the RSS Feed URL
+
+Click the RSS icon.
+
+Depending on the podcast, your browser may:
+
+- Open a page containing raw XML
+- Display the RSS feed URL in a popup
+- Download an XML file
+
+Copy the URL from the browser address bar.
+
+Common RSS feed formats include:
+
+```text
+https://feeds.simplecast.com/xxxxx
+https://feeds.megaphone.fm/xxxxxxxx
+https://anchor.fm/s/xxxxxxxx/podcast/rss
+https://feeds.buzzsprout.com/xxxxxxxx.rss
+https://podcastname.libsyn.com/rss
+```
+
+### Example
+
+If you wanted to download a podcast called **Example Podcast**:
+
+1. Search for it on Listen Notes.
+2. Open the podcast page.
+3. Click the RSS icon (📶).
+4. Copy the RSS feed URL.
+5. Use it with the downloader:
 
 ```bash
-python podcast_downloader.py "YOUR_RSS_FEED_URL"
+python podcast_downloader.py "RSS_FEED_URL"
 ```
+## 🚀 Quick Start
 
 Example:
 
